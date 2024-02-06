@@ -150,7 +150,7 @@
           function descargarCV() {
             var enlace = document.createElement("a");
             enlace.href =
-              "https://drive.google.com/file/d/1cdVuZ5aCM49010sDGnS13ph74NyuWiC_/view?usp=sharing";
+              "https://drive.google.com/file/d/1hXfHzL7cqambry6KR6MhhDJiP96vyb1u/view?usp=sharing";
             enlace.download = "CV_NuñezKevin.pdf";
             document.body.appendChild(enlace);
             enlace.click();
@@ -240,7 +240,7 @@
               <span>Dedicación</span>
               <div class="barra-skill">
                 <div class="progreso">
-                  <span>90%</span>
+                  <span>100%</span>
                 </div>
               </div>
             </div>
@@ -300,21 +300,17 @@
         <div class="fila">
           <!-- Formulario -->
           <div class="col">
-            <input type="text" placeholder="Tú Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Dirección de correo" />
-            <input type="text" placeholder="Tema" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-            <button>
-              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
+            <form method="post">
+              <input type="text" name="nombre" placeholder="Tú Nombre" />
+              <input type="text" name="telefono" placeholder="Número telefónico" />
+              <input type="text" name="correo" placeholder="Dirección de correo" />
+              <input type="text" name="tema" placeholder="Tema" />
+              <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+              <button type="submit">
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
           </div>
           <!-- Mapa -->
           <div class="col">
